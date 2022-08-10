@@ -15,6 +15,61 @@ telescope.setup {
     selection_caret = " ",
     path_display = { "smart" },
 
+    file_ignore_patterns = {
+      ".git/",
+      "target/",
+      "docs/",
+      "vendor/*",
+      "%.lock",
+      "__pycache__/*",
+      "%.sqlite3",
+      "%.ipynb",
+      "node_modules/*",
+      "%.jpg",
+      "%.jpeg",
+      "%.png",
+      "%.svg",
+      "%.otf",
+      "%.ttf",
+      "%.webp",
+      ".dart_tool/",
+      ".github/",
+      ".gradle/",
+      ".idea/",
+      ".settings/",
+      ".vscode/",
+      "__pycache__/",
+      "build/",
+      "dist/",
+      "env/",
+      "gradle/",
+      "node_modules/",
+      "%.pdb",
+      "%.dll",
+      "%.class",
+      "%.exe",
+      "%.cache",
+      "%.ico",
+      "%.pdf",
+      "%.dylib",
+      "%.jar",
+      "%.docx",
+      "%.met",
+      "smalljre_*/*",
+      ".vale/",
+      "%.burp",
+      "%.mp4",
+      "%.mkv",
+      "%.rar",
+      "%.zip",
+      "%.7z",
+      "%.tar",
+      "%.bz2",
+      "%.epub",
+      "%.flac",
+      "%.tar.gz",
+    },
+
     mappings = {
       i = {
         ["<C-n>"] = actions.cycle_history_next,
@@ -90,12 +145,12 @@ telescope.setup {
     -- builtin picker
   },
   extensions = {
-    media_files = {
-        -- filetypes whitelist
-        -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
-        filetypes = {"png", "webp", "jpg", "jpeg"},
-        find_cmd = "rg" -- find command (defaults to `fd`)
-      }
+    -- media_files = {
+    --   -- filetypes whitelist
+    --   -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
+    --   filetypes = { "png", "webp", "jpg", "jpeg" },
+    --   find_cmd = "rg" -- find command (defaults to `fd`)
+    -- }
     -- Your extension configuration goes here:
     -- extension_name = {
     --   extension_config_key = value,

@@ -20,10 +20,19 @@
 | ALT-e               | fast wrap                 |
 
 ## NvimTree
-| KEYS                |  ACTION                   |
-|---------------------|---------------------------|
-| v                   | open in vertical split    |
-| l                   | open node                 |
+| KEYS                |  ACTION                                  |
+|---------------------|------------------------------------------|
+| a                   | create a new file (folder if trailing /) |
+| d                   | deletes a file                           |
+| r                   | rename a file                            |
+| x                   | cut a file                               |
+| -                   | dir up                                   |
+| E                   | expand all                               |
+| W                   | collapse all                             |
+| c                   | copy a file                              |
+| p                   | paste a file                             |
+| v                   | open in vertical split                   |
+| l                   | open node                                |
 
 ## Buffers
 | KEYS                |  ACTION                   |

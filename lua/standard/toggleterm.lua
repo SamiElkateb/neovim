@@ -6,7 +6,7 @@ end
 
 toggleterm.setup({
 	size = 80, -- 20 for horizontal split, 80 for vertical split
-	open_mapping = [[<c-ù>]],
+	open_mapping = [[<c-a>]],
 	hide_numbers = true,
 	shade_filetypes = {},
 	shade_terminals = true,

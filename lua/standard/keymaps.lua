@@ -80,3 +80,7 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- LSP --
 keymap("n", "<leader>f", ":Format<cr>", opts)
+
+-- Settings --
+keymap("n", "<C-s>", ":w<cr>", opts)
+keymap("n", "<C-w>", ":BufferLinePickClose<cr>", opts)

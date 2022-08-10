@@ -6,7 +6,7 @@ end
 
 configs.setup {
   ensure_installed = "all",
-  sync_install = false, 
+  sync_install = false,
   ignore_install = { "phpdoc" }, -- List of parsers to ignore installing
   highlight = {
     enable = true, -- false will disable the whole extension
@@ -14,8 +14,8 @@ configs.setup {
     additional_vim_regex_highlighting = true,
   },
   autopairs = {
-		enable = true,
-	},
+    enable = true,
+  },
   indent = { enable = true, disable = { "yaml" } },
   rainbow = {
     enable = true,
