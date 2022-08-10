@@ -79,7 +79,8 @@ keymap("n", "<leader>td",':Gitsigns toggle_deleted<CR>:Gitsigns toggle_linehl<CR
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- LSP --
-keymap("n", "<leader>f", ":Format<cr>", opts)
+keymap("n", "<leader>F", ":Format<cr>", opts)
+keymap("n", "<leader>f", ":EslintFixAll<cr>", opts)
 
 -- Settings --
 keymap("n", "<C-s>", ":w<cr>", opts)
