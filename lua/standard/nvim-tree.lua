@@ -15,14 +15,14 @@ local tree_cb = nvim_tree_config.nvim_tree_callback
 
 nvim_tree.setup {
   hijack_directories = {
-    enable = false,
+    enable = true,
   },
   -- update_to_buf_dir = {
   --   enable = false,
   -- },
-  -- disable_netrw = true,
-  -- hijack_netrw = true,
-  -- open_on_setup = false,
+  open_on_setup = false,
+  disable_netrw = true,
+  hijack_netrw = true,
   ignore_ft_on_setup = {
     "startify",
     "dashboard",
@@ -32,9 +32,9 @@ nvim_tree.setup {
     custom = { ".git" },
     exclude = { ".gitignore" },
   },
+  hijack_cursor = true,
   -- auto_close = true,
   -- open_on_tab = false,
-  -- hijack_cursor = false,
   update_cwd = true,
   -- update_to_buf_dir = {
   --   enable = true,

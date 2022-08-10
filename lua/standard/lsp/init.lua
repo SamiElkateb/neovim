@@ -6,3 +6,4 @@ end
 
 require("standard.lsp.lsp-installer")
 require("standard.lsp.handlers").setup()
+require("standard.lsp.null-ls")
