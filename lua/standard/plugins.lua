@@ -41,13 +41,14 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
-  use { 'wbthomason/packer.nvim', commit= "afab89594f4f702dc3368769c95b782dbdaeaf0a" } -- Have packer manage itself
+  use { 'wbthomason/packer.nvim', commit = "afab89594f4f702dc3368769c95b782dbdaeaf0a" } -- Have packer manage itself
 
   -- Denpendencies plugins
   use { 'nvim-lua/popup.nvim', commit = "b7404d35d5d3548a82149238289fa71f7f6de4ac" } -- An implementation of the Popup API from vim in Neovim
   use { 'nvim-lua/plenary.nvim', commit = "31807eef4ed574854b8a53ae40ea3292033a78ea" } -- Useful lua functions used ny lots of plugins
   use { 'windwp/nvim-autopairs', commit = "ca89ab9e7e42aa9279f1cdad15398d6e18ccee86" } -- Autopairs, integrates with both cmp and treesitter
   use { 'kyazdani42/nvim-web-devicons', commit = "2d02a56189e2bde11edd4712fea16f08a6656944" }
+  use {'tpope/vim-repeat', commit = "24afe922e6a05891756ecf331f39a1f6743d3d5a"}
 
   -- Colorschemes
   -- user { 'lunarvim/colorschemes', commit = "" } -- A bunch of colorschemes you can try out
@@ -81,7 +82,7 @@ return packer.startup(function(use)
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
-    commit ="e9ab0341394b41ac9fbd197b0a6ceaff3c4d9e51"
+    commit = "e9ab0341394b41ac9fbd197b0a6ceaff3c4d9e51"
   }
   use { 'JoosepAlviste/nvim-ts-context-commentstring', commit = "4befb8936f5cbec3b726300ab29edacb891e1a7b" }
   use { 'p00f/nvim-ts-rainbow', commit = "0c19f1eda263a1d44b6741e727fef223886c80a8" }
@@ -104,6 +105,8 @@ return packer.startup(function(use)
   -- Home screen
   use { 'goolord/alpha-nvim', commit = "d688f46090a582be8f9d7b70b4cf999b780e993d" }
   use { 'antoinemadec/FixCursorHold.nvim', commit = "5aa5ff18da3cdc306bb724cf1a138533768c9f5e" } -- This is needed to fix lsp doc highlight
+
+  use {'ggandor/lightspeed.nvim', commit = "977ca1acdf8659ae0f7ac566d7fe06770661c9ce"}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
